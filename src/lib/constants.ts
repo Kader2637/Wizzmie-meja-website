@@ -1,0 +1,46 @@
+export const MENU_ITEMS = [
+  { id: 1, name: "Wizzmie Original", price: 10000, desc: "Mie kenyal dengan bumbu gurih rahasia.", image: "🍜", category: "Noodle" },
+  { id: 2, name: "Wizzmie Spicy", price: 12000, desc: "Mie pedas nendang level 1-5.", image: "🌶️", category: "Noodle" },
+  { id: 3, name: "Wizzmie Black", price: 13000, desc: "Mie hitam dengan saus lada hitam.", image: "🍝", category: "Noodle" },
+  { id: 4, name: "Wizzmie Mozza", price: 15000, desc: "Mie gurih lumer dengan mozzarella.", image: "🧀", category: "Noodle" },
+  { id: 5, name: "Dimsum Udang", price: 15000, desc: "Dimsum udang goreng renyah.", image: "🍤", category: "Dimsum" },
+  { id: 6, name: "Siomay Ayam", price: 14000, desc: "Siomay ayam kukus lembut.", image: "🥟", category: "Dimsum" },
+  { id: 7, name: "Lumpia Kulit Tahu", price: 14000, desc: "Lumpia kukus isian daging lezat.", image: "🌯", category: "Dimsum" },
+  { id: 8, name: "Hakau Udang", price: 16000, desc: "Hakau transparan isi udang utuh.", image: "🥟", category: "Dimsum" },
+  { id: 9, name: "Es Teh Tarik", price: 8000, desc: "Teh tarik otentik manis segar.", image: "🥤", category: "Beverage" },
+  { id: 10, name: "Es Coklat Premium", price: 12000, desc: "Coklat leleh dengan susu segar.", image: "🍫", category: "Beverage" },
+  { id: 11, name: "Lemon Tea", price: 7000, desc: "Es teh lemon segar asam manis.", image: "🍋", category: "Beverage" },
+  { id: 12, name: "Matcha Latte", price: 13000, desc: "Matcha asli jepang + susu.", image: "🍵", category: "Beverage" },
+];
+
+export const INITIAL_TABLES = [
+  // Floor 1
+  { id: 1, name: "A-1", capacity: 2, isOccupied: false, x: 15, y: 15, type: "circle", floor: 1 },
+  { id: 2, name: "A-2", capacity: 2, isOccupied: true, x: 15, y: 35, type: "circle", floor: 1 },
+  { id: 3, name: "A-3", capacity: 2, isOccupied: false, x: 15, y: 55, type: "circle", floor: 1 },
+  { id: 4, name: "A-4", capacity: 2, isOccupied: false, x: 15, y: 75, type: "circle", floor: 1 },
+  { id: 5, name: "M-1", capacity: 4, isOccupied: true, x: 40, y: 25, type: "square", floor: 1 },
+  { id: 6, name: "M-2", capacity: 4, isOccupied: false, x: 40, y: 45, type: "square", floor: 1 },
+  { id: 7, name: "M-3", capacity: 4, isOccupied: false, x: 40, y: 65, type: "square", floor: 1 },
+  { id: 8, name: "S-1", capacity: 6, isOccupied: true, x: 65, y: 25, type: "rect", floor: 1 },
+  { id: 9, name: "S-2", capacity: 6, isOccupied: false, x: 65, y: 45, type: "rect", floor: 1 },
+  { id: 10, name: "S-3", capacity: 6, isOccupied: false, x: 65, y: 65, type: "rect", floor: 1 },
+  { id: 11, name: "B-1", capacity: 2, isOccupied: false, x: 88, y: 15, type: "circle", floor: 1 },
+  { id: 12, name: "B-2", capacity: 2, isOccupied: true, x: 88, y: 35, type: "circle", floor: 1 },
+  { id: 13, name: "B-3", capacity: 2, isOccupied: false, x: 88, y: 55, type: "circle", floor: 1 },
+  { id: 14, name: "B-4", capacity: 2, isOccupied: false, x: 88, y: 75, type: "circle", floor: 1 },
+  { id: 15, name: "VIP-1", capacity: 8, isOccupied: false, x: 30, y: 92, type: "rect-vip", floor: 1 },
+  { id: 16, name: "VIP-2", capacity: 8, isOccupied: false, x: 50, y: 92, type: "rect-vip", floor: 1 },
+  { id: 17, name: "VIP-3", capacity: 8, isOccupied: false, x: 70, y: 92, type: "rect-vip", floor: 1 },
+
+  // Floor 2
+  { id: 18, name: "2F-A1", capacity: 4, isOccupied: false, x: 20, y: 20, type: "square", floor: 2 },
+  { id: 19, name: "2F-A2", capacity: 4, isOccupied: false, x: 20, y: 40, type: "square", floor: 2 },
+  { id: 20, name: "2F-A3", capacity: 4, isOccupied: true, x: 20, y: 60, type: "square", floor: 2 },
+  { id: 21, name: "2F-B1", capacity: 2, isOccupied: false, x: 50, y: 20, type: "circle", floor: 2 },
+  { id: 22, name: "2F-B2", capacity: 2, isOccupied: false, x: 50, y: 40, type: "circle", floor: 2 },
+  { id: 23, name: "2F-B3", capacity: 2, isOccupied: false, x: 50, y: 60, type: "circle", floor: 2 },
+  { id: 24, name: "2F-C1", capacity: 6, isOccupied: false, x: 80, y: 30, type: "rect", floor: 2 },
+  { id: 25, name: "2F-C2", capacity: 6, isOccupied: false, x: 80, y: 55, type: "rect", floor: 2 },
+  { id: 26, name: "2F-VIP-1", capacity: 10, isOccupied: false, x: 50, y: 92, type: "rect-vip", floor: 2 },
+];
